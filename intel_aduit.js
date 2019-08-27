@@ -72,3 +72,29 @@ function foo2()
 // https://www.toptal.com/javascript/interview-questions
 
 //----------- Question 4-------------------///
+
+
+// What does the function __construct do in PHP?
+// ----------------Solution 1 ------------------////
+
+// __construct was introduced in PHP5 and it is the right way to define your, well, constructors (in PHP4 you used the name of the class for a constructor). You are not required to define a constructor in your class, but if you wish to pass any parameters on object construction then you need one.
+
+// An example could go like this:
+
+
+class Database {
+  protected $userName;
+  protected $password;
+  protected $dbName;
+
+  public function __construct ( $UserName, $Password, $DbName ) {
+    $this->userName = $UserName;
+    $this->password = $Password;
+    $this->dbName = $DbName;
+  }
+}
+
+// and you would use this as:
+$db = new Database ( 'user_name', 'password', 'database_name' );
+
+//----------- Question 4-------------------///
