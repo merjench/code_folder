@@ -47,3 +47,28 @@ FROM
 GROUP BY department.dept_name
 ORDER BY student_number DESC , department.dept_name
 ;
+
+
+//---------Question 3------------//
+
+// Consider the two functions below. Will they both return the same thing? Why or why not?
+
+function foo1()
+{
+  return {
+      bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return
+  {
+      bar: "hello"
+  };
+}
+
+//----Solution 1------/////
+// https://www.toptal.com/javascript/interview-questions
+
+//----------- Question 4-------------------///
